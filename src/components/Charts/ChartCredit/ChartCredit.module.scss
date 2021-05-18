@@ -1,0 +1,40 @@
+@import "variables";
+
+
+.box_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+
+  @media #{$tablet} {
+    height: 80%;
+  }
+
+  @media #{$phone} {
+    height: 70%;
+  }
+
+  @media #{$mobile} {
+    height: 12vh;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -10%;
+}
+
+:global {
+  .recharts-surface {
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.3));
+  }
+}

@@ -1,0 +1,222 @@
+@import "fonts";
+
+@import "variables";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: $grey;
+  margin: 0;
+  font: 400 16px $font-family;
+  display: grid;
+  font-family: "Helvetica", sans-serif;
+}
+
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 10% auto;
+  grid-template-areas: "sidebar header" "sidebar content";
+
+  @media #{$tablet} {
+    grid-template-columns: 13vw auto;
+    grid-template-rows: 8vh auto;
+  }
+
+  @media #{$mobile} {
+    grid-template-rows: 10vh 90vh;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  display: grid;
+  padding: 0 60px;
+
+  @media #{$desktop} {
+    padding: 0 20px;
+  }
+
+  @media #{$phone} {
+    padding: 0 10px;
+  }
+}
+
+.main {
+  grid-area: content;
+  padding-top: 58px;
+  padding-left: 58px;
+  padding-right: 58px;
+  overflow-y: scroll;
+  background-color: #f6f7fb;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    padding: 0 30px;
+  }
+
+  @media #{$phone} {
+    padding: 0 10px;
+    grid-template-rows: 5vh 95vh;
+  }
+
+  @media #{$mobile} {
+    padding: 0 10px;
+    grid-template-rows: 5vh 95vh;
+  }
+}
+
+.content {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: repeat(auto-fit, 21vw);
+
+  @media #{$desktop} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 28vw);
+  }
+
+  @media #{$tablet} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 30vw);
+  }
+
+  @media #{$phone} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 34vw);
+  }
+
+  @media #{$mobile} {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 63vw);
+  }
+}
+
+
+.wrap {
+  padding: 0 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media #{$phone} {
+    padding: 0 5%;
+  }
+
+  @media #{$mobile} {
+    padding: 0;
+  }
+}
+
+.button {
+  padding-top: 70px;
+  text-align: center;
+
+  button {
+    cursor: pointer;
+    padding: 18px 0;
+    width: 24%;
+    object-fit: contain;
+    border-radius: 36px;
+    font-size: 24px;
+    text-align: center;
+    color: $white;
+    background-color: $blue;
+    border: 1px solid $blue;
+    outline: none;
+
+    @media #{$phone} {
+      width: 60%;
+      padding: 10px 0;
+      font-size: 18px;
+    }
+  }
+}
+
+.nav {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  li {
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+}
+
+form {
+  display: grid;
+}
+
+.input {
+  padding: 13px 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 24px;
+  color: $lightGrey;
+  outline: none;
+
+  @media #{$tablet} {
+    font-size: 18px;
+  }
+
+  &:focus ~.border {
+    width: 100%;
+    transition: .3s;
+  }
+
+  &:focus ~.floatLabel {
+    top: 0;
+    font-size: 15px;
+  }
+}
+
+.border {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background-color: $blue;
+  transition: .3s;
+}
+
+.field {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid $grey;
+
+  &:first-child {
+    margin-bottom: 53px;
+  }
+}
+
+.floatLabel {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #aaa;
+  transition: .2s ease all;
+}
+

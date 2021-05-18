@@ -1,0 +1,45 @@
+@import "variables";
+
+.content {
+  padding: 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row_title {
+  padding-top: 15px;
+  font-size: 16px;
+  color: #a5a5a5;
+}
+
+.row_body {
+  padding-top: 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media #{$desktop} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 28vw);
+  }
+
+  @media #{$tablet} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 30vw);
+  }
+
+  @media #{$phone} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 34vw);
+  }
+
+  @media #{$mobile} {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 63vw);
+  }
+}
+
+

@@ -1,0 +1,68 @@
+@import "variables";
+
+.stepper {
+  padding: 34px 66px 110px 66px;
+
+  @media #{$tablet} {
+    padding: 40px 0;
+  }
+}
+
+.step_list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.step {
+  position: relative;
+  width: 25%;
+  color: $grey;
+  font-size: 18px;
+  text-align: center;
+
+  &:last-child {
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    background-color: $lightGrey;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+  }
+}
+
+.active {
+
+  &:after {
+    background-color: $blue;
+  }
+
+  .icon {
+    background-color: $blue;
+  }
+}
+
+.title {
+  @media #{$tablet} {
+    font-size: 16px;
+  }
+
+  @media #{$phone} {
+    display: none;
+  }
+}
+
+.icon {
+  border-radius: 50%;
+  background-color: $white;
+}

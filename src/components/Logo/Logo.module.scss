@@ -1,0 +1,20 @@
+@import "variables";
+
+.logo {
+  display: none;
+  align-items: center;
+
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    width: 247px;
+    height: 34px;
+
+    @media #{$mobile} {
+      width: 140px;
+      height: 20px;
+    }
+  }
+}

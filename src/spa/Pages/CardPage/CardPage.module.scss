@@ -1,0 +1,33 @@
+@import "variables";
+
+.content {
+  padding: 0;
+}
+
+.info_wrapper {
+  display: grid;
+  grid-template-areas: "card details" "card actions";
+  height: 50vh;
+  grid-gap: 10px;
+}
+
+.card_wrapper,
+.details_wrapper,
+.actions_wrapper {
+  background-color: $white;
+  box-shadow: 0 0 1vw rgba(206, 206, 206, .5);
+  border-radius: 8px;
+}
+
+.card_wrapper {
+  grid-area: card;
+
+}
+
+.details_wrapper {
+  grid-area: details;
+}
+
+.actions_wrapper {
+  grid-area: actions;
+}

@@ -1,0 +1,170 @@
+@import "variables";
+
+.day {
+  padding-top: 50px;
+
+  @media #{$mobile} {
+    padding-top: 20px;
+  }
+}
+
+.title {
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.payments {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$mobile} {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+}
+
+.payment {
+  padding: 22px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.time {
+  width: 10%;
+  span {
+    font-size: 18px;
+    color: $lightGrey;
+
+    @media #{$mobile} {
+      font-size: 15px;
+    }
+  }
+}
+
+.dot {
+  width: 5%;
+
+  @media #{$mobile} {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid $lightGrey;
+    border-radius: 50%;
+  }
+}
+
+.description {
+  width: 65%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+
+  @media #{$mobile} {
+    padding-left: 10px;
+  }
+}
+
+.image {
+  width: 66px;
+  height: 66px;
+
+  @media #{$mobile} {
+   width: 45px;
+    height: 45px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text {
+  padding-left: 30px;
+
+  @media #{$mobile} {
+    padding-left: 10px;
+  }
+
+  .text_title {
+    margin: 0;
+    font-size: 22px;
+    color: $grey;
+
+    @media #{$mobile} {
+      font-size: 15px;
+    }
+  }
+
+  .text_desc {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 22px;
+    color: $slightGrey;
+
+    @media #{$mobile} {
+      font-size: 15px;
+    }
+  }
+}
+
+.about {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.money {
+  font-size: 25px;
+  font-weight: 700;
+
+  @media #{$mobile} {
+    font-size: 15px;
+  }
+}
+
+.settings {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.set_btn {
+  border: 0;
+  background: transparent;
+
+  &:focus {
+    ~ .hidden_settings {
+      display: block;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+}
+
+.hidden_settings {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 26px;
+  background-color: #ebebeb;
+
+  button {
+    background: transparent;
+    border: 0;
+    margin: 0 5px;
+  }
+}

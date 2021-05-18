@@ -1,0 +1,155 @@
+@import "variables";
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 50%;
+
+  @media #{$phone} {
+    width: 100%;
+  }
+}
+
+.data {
+  padding-left: 62px;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet} {
+    padding-left: 0;
+  }
+
+  @media #{$phone} {
+    width: 100%;
+  }
+}
+
+.title {
+  padding-top: 65px;
+  font-size: 29px;
+  color: $grey;
+  letter-spacing: -.8px;
+
+  @media #{$tablet} {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+}
+
+// TODO: add styles to label tag in jsx
+.label-form {
+  color: $lightGrey;
+}
+
+.field {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 68%;
+  border-bottom: 1px solid $grey;
+
+  @media #{$desktop} {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.field_sm {
+  width: 40%;
+
+  @media #{$phone} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.image {
+  width: 50%;
+
+  @media #{$phone} {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    @media #{$tablet} {
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+
+.type {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media #{$tablet} {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .label {
+    padding-bottom: 15px;
+  }
+}
+
+.label {
+  margin-right: 20px;
+  font-size: 18px;
+  color: $lightGrey;
+
+  @media #{$tablet} {
+    font-size: 16px;
+  }
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media #{$phone} {
+    flex-direction: column;
+  }
+
+  .field {
+    padding-top: 15px;
+
+    @media #{$tablet} {
+      width: 40%;
+    }
+
+    @media #{$phone} {
+      width: 100%;
+    }
+
+    input {
+      padding: 14px 10px;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      font-size: 24px;
+      color: $lightGrey;
+      outline: none;
+
+      @media #{$tablet} {
+        font-size: 20px;
+      }
+
+      &:focus ~.border {
+        width: 100%;
+        transition: .3s;
+      }
+    }
+  }
+}

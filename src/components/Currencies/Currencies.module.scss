@@ -1,0 +1,53 @@
+@import "styles/variables";
+
+.currencies {
+  display: flex;
+  align-items: center;
+
+  @media #{$mobile} {
+    padding-top: 5vw;
+  }
+}
+
+.title {
+  font-family: "Helvetica", sans-serif;
+  color: #000;
+  font-size: 1.1vw;
+
+  @media #{$tablet} {
+    font-size: 1.5vw;
+  }
+
+  @media #{$phone} {
+    font-size: 2vw;
+  }
+
+  @media #{$phone} {
+    font-size: 3vw;
+  }
+}
+
+.data {
+  padding: 0 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.data_item {
+  padding: 0 .3vw;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.1vw;
+  color: $lightGrey;
+
+  @media #{$tablet} {
+    font-size: 1.5vw;
+  }
+
+  @media #{$phone} {
+    font-size: 2vw;
+  }
+
+  @media #{$phone} {
+    font-size: 3vw;
+  }
+}

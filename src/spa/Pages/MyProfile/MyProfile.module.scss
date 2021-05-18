@@ -1,0 +1,48 @@
+@import "variables";
+
+.my_profile {
+  grid-area: content;
+  overflow-y: scroll;
+}
+
+.tabs {
+  padding-top: 20px;
+}
+
+.tablist {
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $slightGrey;
+    z-index: -1;
+  }
+
+  :global {
+    .react-tabs__tab--selected {
+      border-bottom: 2px solid $blue;
+    }
+  }
+}
+
+.tabitem {
+  cursor: pointer;
+  padding: 10px 20px;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 700;
+
+  @media #{$mobile} {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+

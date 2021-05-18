@@ -1,0 +1,28 @@
+@import "variables";
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #373737;
+  font-family: "Helvetica", sans-serif;
+
+  @media #{$phone} {
+  }
+
+  @media #{$mobile} {
+  }
+
+  h2 {
+    font-size: 1.8vw;
+    font-weight: 400;
+
+    @media #{$phone} {
+      font-size: 2.8vw;
+    }
+
+    @media #{$mobile} {
+      font-size: 5vw;
+    }
+  }
+}

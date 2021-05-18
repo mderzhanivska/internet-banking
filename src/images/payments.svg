@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-97" transform="translate(-33.000000, -237.000000)" stroke="#FFFFFF">
+            <g id="Combined-Shape" transform="translate(33.000000, 237.000000)">
+                <path d="M4.49657204,3.87590175 L4.34706598,3.89095418 L2,3.89095418 C1.30964406,3.89095418 0.75,4.45059824 0.75,5.14095418 L0.75,20 C0.75,20.6903559 1.30964406,21.25 2,21.25 L24,21.25 C24.6903559,21.25 25.25,20.6903559 25.25,20 L25.25,5.14095418 C25.25,4.45059824 24.6903559,3.89095418 24,3.89095418 L23.1827064,3.89095418 L22.5377094,2.63050321 C21.8733944,1.33230115 20.4256839,0.63553639 18.9966505,0.926236246 L4.49657204,3.87590175 Z" stroke-width="1.5"></path>
+                <circle id="Oval-7" stroke-width="1" cx="21.5" cy="12.5" r="1.5"></circle>
+                <path d="M25.2142857,8.64372933 L25.2098147,16.5016651 L21.05018,16.5016651 C18.880271,16.5016651 17.1212121,14.7426063 17.1212121,12.5726972 L17.1212121,12.5726972 C17.1212121,10.4027882 18.880271,8.64372933 21.05018,8.64372933 L25.2142857,8.64372933 Z" id="Path-6" stroke-width="1.5"></path>
+                <path d="M4.77689519,3.86692093 L22.8607194,3.86692093" id="Line" stroke-width="1.5" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

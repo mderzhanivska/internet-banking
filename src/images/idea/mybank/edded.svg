@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.531017485">
+        <g id="Desktop-HD-Copy-21" transform="translate(-598.000000, -532.000000)" fill-rule="nonzero" stroke="#6E6C6C">
+            <g id="Oval" transform="translate(599.000000, 533.000000)">
+                <circle cx="6.5" cy="6.5" r="6.5"></circle>
+                <polyline id="Path-35" stroke-linecap="round" stroke-linejoin="round" points="3 6.14376373 5.79255634 9 10 3.77219675"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,101 @@
+@import "variables";
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.auth {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 50%;
+
+  @media #{$tablet} {
+    width: 75%;
+  }
+
+  @media #{$phone} {
+    width: 100%;
+  }
+}
+
+
+.help {
+  padding-top: 48px;
+  text-align: center;
+}
+
+.link {
+  font-size: 20px;
+  text-decoration: none;
+  color: $grey;
+
+  &:hover {
+    color: $grey;
+  }
+}
+
+.buttons {
+  padding-top: 43px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .login,
+  .register {
+    padding-bottom: 20px;
+  }
+
+  .login {
+
+    .link {
+      background: linear-gradient(346deg, #f59c26, #f9b63d);;
+      border: 1px solid #f59c26;
+    }
+  }
+
+  .register {
+
+    .link {
+      color: black;
+      background-color: transparent;
+      border: 1px solid $black;
+    }
+  }
+
+  .link {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 0;
+    width: 50%;
+    object-fit: contain;
+    border-radius: 36px;
+    font-size: 24px;
+    text-align: center;
+    color: $white;
+
+    @media #{$mobile} {
+      width: 80%;
+      padding: 10px 0;
+      font-size: 20px;
+    }
+  }
+}
+
+.visible {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.show_hide {
+  padding: 3px;
+  background-color: $blue;
+  border-radius: 5px;
+  color: $white;
+}

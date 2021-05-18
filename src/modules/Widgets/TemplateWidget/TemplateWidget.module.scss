@@ -1,0 +1,274 @@
+@import "variables";
+
+.template_widget {
+  grid-template-rows: 15% 55% 30%;
+}
+
+.top_info {
+  position: relative;
+  padding: 0 1.2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$phone} {
+    padding: 0 3.2vw;
+  }
+}
+
+.box_title {
+  font-size: 1vw;
+  color: $black;
+
+  @media #{$desktop} {
+    font-size: 1.6vw;
+  }
+
+  @media #{$tablet} {
+    font-size: 1.8vw;
+  }
+
+  @media #{$phone} {
+    font-size: 2vw;
+  }
+
+  @media #{$mobile} {
+    font-size: 3.2vw;
+  }
+}
+
+.box_body {
+  padding: 0 1.2vw;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$phone} {
+    padding: 0 3.2vw;
+  }
+}
+
+
+.box_info {
+  padding: 0;
+}
+
+.info {
+  padding-bottom: 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info_image {
+  margin-right: 1vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    @media #{$phone} {
+        width: 7vw;
+        height: 7vw;
+    }
+  }
+}
+
+.info_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_title {
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #a0a0a0;
+
+  @media #{$tablet} {
+    font-size: 1.5vw;
+  }
+
+  @media #{$phone} {
+    font-size: 2vw;
+  }
+
+  @media #{$mobile} {
+    font-size: 3vw;
+  }
+}
+
+.item_data {
+  font-size: 16px;
+  color: $black;
+
+  @media #{$tablet} {
+    font-size: 1.8vw;
+  }
+
+  @media #{$phone} {
+    font-size: 2vw;
+  }
+
+  @media #{$mobile} {
+    font-size: 3vw;
+  }
+}
+
+.box_input {
+  position: relative;
+  border: 2px dashed $lightGrey;
+  border-radius: 7px;
+
+  @media #{$tablet} {
+    margin-top: 15px;
+  }
+
+  @media #{$phone} {
+    border: 1px dashed $lightGrey;
+    margin-top: 5px;
+  }
+
+  @media #{$mobile} {
+    margin-top: 15px;
+  }
+
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    right: 1vw;
+    content: "₴";
+    font-size: 25px;
+    color: $black;
+    transform: translateY(-50%);
+
+    @media #{$phone} {
+      font-size: 15px;
+    }
+  }
+
+  input {
+    padding: .8vw;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 25px;
+    color: $black;
+
+    &::placeholder {
+      color: $black;
+    }
+
+    @media #{$phone} {
+      font-size: 18px;
+    }
+
+    @media #{$mobile} {
+      font-size: 20px;
+    }
+  }
+}
+
+.box_buttons {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+
+  a {
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+    font-size: 12px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    @media #{$tablet} {
+      font-size: 1.2vw;
+    }
+
+    @media #{$phone} {
+      font-size: 2vw;
+    }
+
+    &:focus {
+      outline: 1px solid $blue;
+    }
+
+    &:hover {
+      color: $blue;
+
+      .btn_icon {
+        svg {
+          g {
+            g {
+              fill: $blue;
+            }
+          }
+        }
+      }
+
+      span {
+        color: $blue;
+      }
+    }
+
+    .btn_icon {
+      width: 1vw;
+      height: 1vw;
+
+      @media #{$desktop} {
+        width: 2.4vw;
+        height: 1.5vw;
+      }
+
+      @media #{$tablet} {
+        width: 2.4vw;
+        height: 1.5vw;
+      }
+
+      @media #{$mobile} {
+        width: 7.4vw;
+        height: 3vw;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        g {
+          g {
+            fill: $black;
+          }
+        }
+      }
+    }
+
+    span {
+      margin-top: .5vw;
+      color: $black;
+    }
+  }
+}

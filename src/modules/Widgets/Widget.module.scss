@@ -1,0 +1,33 @@
+@import "variables";
+
+.widget {
+  height: 19.5vw;
+  display:grid;
+  grid-template-rows: 15% 55% 30%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: $white;
+  box-shadow: 0 0 1vw rgba(206, 206, 206, .5);
+  border-radius: 8px;
+
+  @media #{$desktop} {
+    height: 26vw;
+  }
+
+  @media #{$tablet} {
+    height: 28vw;
+  }
+
+  @media #{$phone} {
+    height: 30vw;
+  }
+
+  @media #{$mobile} {
+    height: 58vw;
+  }
+
+
+  &:hover {
+    box-shadow: 0 0 1vw $blue;
+  }
+}

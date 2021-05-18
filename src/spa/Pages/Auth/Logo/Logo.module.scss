@@ -1,0 +1,47 @@
+@import "variables";
+
+.logo {
+  padding-top: 85px;
+
+  @media #{$phone} {
+    padding-top: 20px;
+  }
+
+  .row {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+.title {
+  padding-top: 42px;
+  font-size: 27px;
+  text-align: center;
+  color: $darkGrey;
+  opacity: .59;
+
+  @media #{$phone} {
+    font-size: 23px;
+  }
+
+  @media #{$mobile} {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+
+.pic {
+  text-align: center;
+
+  img {
+    width: 282px;
+    height: 44px;
+
+    @media #{$mobile} {
+      width: 250px;
+      height: 37px;
+    }
+  }
+}

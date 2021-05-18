@@ -1,0 +1,37 @@
+
+$grey: #565656;
+$white: #ffffff;
+$red: #e2101a;
+$blue: #4fc0fb;
+$darkblue: #005081;
+$lightGrey: #818181;
+$darkGrey: #303030;
+$black: #373737;
+$slightGrey: #a5a5a5;
+
+$border: #dddddd;
+
+//gradient
+
+$blueGrad: linear-gradient(346deg, #077fc0, #0abef9);
+
+
+$font-family: "PFBeauSansPro", sans-serif;
+
+//media
+// TODO: need to add min-width for all breakpoints
+$mobile: "screen and (max-width: 480px)";
+$phone: "screen and (max-width: 767px)";
+$tablet: "screen and (max-width: 991px)";
+$desktop: "screen and (max-width: 1199px)";
+$large: "screen and (max-width: 1599px)";
+$fullHD: "screen and (max-width: 1920px)";
+
+:export {
+  mobile: $mobile;
+  phone: $phone;
+  tablet: $tablet;
+  desktop: $desktop;
+  large: $large;
+  fullHD: $fullHD;
+}

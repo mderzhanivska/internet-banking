@@ -1,0 +1,63 @@
+@import "variables";
+
+.header {
+  height: 100%;
+  padding: 1vw 4vw;
+  grid-area: header;
+  border-bottom: 2px solid $border;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  @media #{$tablet} {
+    padding: 0 2vw;
+  }
+
+  @media #{$mobile} {
+    padding: 15px;
+  }
+
+}
+
+.desktop {
+  padding: .5vw 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$mobile} {
+    flex-direction: column;
+  }
+}
+
+.desk_part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media #{$phone} {
+    justify-content: center;
+  }
+}
+
+.languages {
+  margin: 0 1vw;
+
+  .dropdown {
+    border: 0 !important;
+
+    :global {
+
+      .menu {
+        border-color: transparent !important;
+      }
+    }
+  }
+}
+
+
+
+
+

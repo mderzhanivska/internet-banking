@@ -1,0 +1,86 @@
+@import "variables";
+
+.history {
+  grid-area: content;
+  padding: 0;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.title {
+  padding-top: 48px;
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+
+    @media #{$mobile} {
+      font-size: 25px;
+    }
+  }
+}
+
+.controls {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$mobile} {
+    flex-direction: column;
+  }
+}
+
+.control_block {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$mobile} {
+    padding-bottom: 20px;
+  }
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.sort {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sort_desc {
+  font-size: 18px;
+  color: $slightGrey;
+  padding-right: 27px;
+}
+
+.set_filter {
+  padding: 17px 57px;
+  background-color: $blue;
+  border-radius: 26px;
+  font-size: 18px;
+  color: $white;
+  text-align: center;
+
+  @media #{$mobile} {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+}
+
+.clean_filter {
+  padding: 17px 57px;
+  background-color: transparent;
+  border-radius: 26px;
+  font-size: 18px;
+  color: $slightGrey;
+
+  @media #{$mobile} {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+}
+
